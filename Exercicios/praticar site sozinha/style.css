@@ -1,0 +1,133 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
+@font-face {
+    font-family: 'Elegante';
+    src: url('../fontes/Elegant Handwriting.otf') format('opentype');
+
+}
+
+
+
+
+:root{
+    --cor0:#5C190D;
+    --cor1:#E17663;
+    --cor2:#DB3B1F;
+    --cor3:#C26959;
+    --cor4:#A82D17;
+
+    --fonte-padrao: Arial,Verdana, Helvetica, sans-serif;
+    --fonte-destaque:  'Peddana', serif;
+    --fonte-elegante: 'Elegant', cursive;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image:linear-gradient(to top, var(--cor1), var(--cor4));
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1{
+    color: white;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    max-width: 500px;
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: -20px 0px 8px 0px rgba(0, 0, 0, 0.281);
+    font-family: var(--fonte-elegante);
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor0);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    
+}
+
+main  h1{
+    font-family: var(--fonte-elegante);
+    color: var(--cor0);
+    font-weight: bold;
+    font-size: 1.8em;
+
+}    
+
+main p{
+    font-size: 1em;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+div.videos{
+    background-color:var(--cor1);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.videos > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%; 
+    width: 90%;
+    height: 90%;
+    
+}
+
+footer{
+    color: white;
+    font-weight: nortmal;
+   font-size: 1em;
+   text-align: center;
+}
+
+footer > p.af::after{
+    content: '\2763';
+}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title> 
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <h2>Tente abrir este site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</h2>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">
+      <img src="imagens/grande.png" alt="Imagem flexivel">   
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls loop>
+       <source src="midia/brookersblues-audionautix.mp3" type="audio/mpeg"> 
+       <p>Caso o navegar nao tenha comaptibilidade com MP3,WAV  nem OGG aparecera isso no site. Infelizmente o seu navegador nao consegue reproduzir o audio <a href="midia/brookersblues-audionautix.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <!-- players MP3, WAV,OGG-->
+</body>
+</html>

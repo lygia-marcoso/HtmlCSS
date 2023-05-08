@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+html usamos ID (somente 1 elemento por pagina )
+css usamos #
+
+HTML usamos Class ( pode ser usado em varios elementos)
+CSS usamos   . 
+*/
+
+body{
+    background-color: #1CCEED;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #138BA1;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #0C5461;
+    color: white;
+}
+
+h2{
+    color: #18ADC7;
+}
+
+h2.basico{
+    color: rgb(187, 115, 22);
+}
+ 
+h2.intermediario{
+    color: rgb(161, 157, 151);
+}
+h2.avancado{
+    color: rgb(231, 231, 129);
+}
+.destaque{
+    background-color: black;
+}
