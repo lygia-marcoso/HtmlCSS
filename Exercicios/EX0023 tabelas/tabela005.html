@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bold; 
+            padding: 10px;   
+          }
+          th, td{
+            border: 1px solid black;
+            padding: 10px;
+          }
+          col.cnome{
+            background-color: aqua;
+          }
+
+          .cgrupo{
+            background-color: cadetblue;
+          }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo"> <!-- quando queremos personalizar 2 tabelas do mesmo modo podemos colocar CLASS CGRUPO span: 2 ou o numero de colunas iguais -->
+        <col class="cgrupo" span="2"> <!-- podemos personalizar no style direto com .vermelho por exemplo e aqui podemos colocar COL class vermelho-->
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claúdio</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Julio</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Mário</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Tobias</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>
